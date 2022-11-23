@@ -1,0 +1,14 @@
+<h1>Index</h1>
+<%= link_to "新增房源", new_room_path %>
+
+<ul>
+<% @rooms.each do |r| %>
+<li>
+<%= r.id %>
+<%= link_to r.name, room_path(r.id) %>
+<%= r.price %>
+<%= link_to "修改", edit_room_path(r.id) %>
+<%= link_to "刪除", room_path(r.id), method: "delete", data: { confirm: "確定刪除？" } %>
+</li>
+<% end %>
+</ul>

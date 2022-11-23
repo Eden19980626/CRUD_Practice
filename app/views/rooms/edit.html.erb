@@ -1,0 +1,14 @@
+<h1>修改房源</h1>
+
+<%= form_with model: @room do |r| %>
+<div>
+<%= r.label :name %>
+<%= r.text_field :name %>
+</div>
+<div>
+<%= r.label :price %>
+<%= r.text_field :price %>
+</div>
+<%= r.submit %>
+<% end %>
+

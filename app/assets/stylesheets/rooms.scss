@@ -1,0 +1,12 @@
+.field_with_errors{
+    display: inline;
+    label[for="store_name"]{
+        color: #f00
+    }
+    label[for="store_price"]{
+        color: #f00
+    }
+    input[type="text"]{
+        border: 1px solid #f00;
+    }
+}
