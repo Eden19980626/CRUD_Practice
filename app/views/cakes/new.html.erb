@@ -1,0 +1,13 @@
+<h2>新增蛋糕</h2>
+
+<%= form_with model: @cake do |f| %>
+<div>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+<div>
+<%= f.label :price %>
+<%= f.text_field :price %>
+</div>
+<%= f.submit %>
+<% end %>

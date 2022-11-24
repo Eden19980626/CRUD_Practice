@@ -1,0 +1,10 @@
+<h2>INDEX</h2>
+<%= link_to "新增蛋糕", new_cake_path %>
+<% @cakes.each do |c| %>
+<ul>
+<li>
+<%= link_to c.name, cake_path(c.id) %>
+<%= link_to "編輯", edit_cake_path(c.id) %>
+<%= link_to "刪除", cake_path(c.id), method: "delete", data: { confirm: "確定刪除？" } %>
+</ul>
+<% end %>
